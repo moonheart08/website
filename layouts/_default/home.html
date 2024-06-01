@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ .Content }}
+<div style="display: flex; flex-direction: column;">
+  <div class="obox">
+    {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

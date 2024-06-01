@@ -1,0 +1,28 @@
+body {
+    --color-primary-1: oklch(74.77% 0.162 68.99);
+    --color-primary-2: oklch(64.77% 0.162 68.99);
+    --color-primary-3: oklch(54.77% 0.162 68.99);
+    --color-primary-4: oklch(44.77% 0.162 68.99);
+    --color-primary-5: oklch(34.77% 0.162 68.99);
+
+    // These would be relative but Firefox has issues with that.
+    --color-secondary-1: oklch(80% 0.018 84.59);
+    --color-secondary-2: oklch(65% 0.016 84.59);
+    --color-secondary-3: oklch(50% 0.014 84.59);
+    --color-secondary-4: oklch(35% 0.012 84.59);
+    --color-secondary-5: oklch(20% 0.010 84.59);
+
+    --text-color-light: var(--color-secondary-1);
+    --text-color-dark: var(--color-secondary-5);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        // Reverse the order of the 
+        --color-secondary-5: oklch(80% 0.018 84.59);
+        --color-secondary-4: oklch(65% 0.016 84.59);
+        --color-secondary-3: oklch(50% 0.014 84.59);
+        --color-secondary-2: oklch(35% 0.012 84.59);
+        --color-secondary-1: oklch(20% 0.010 84.59);
+    }
+}

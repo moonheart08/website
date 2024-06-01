@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+nav>#navdesc {
+    margin: 0px;
+}
+
+nav>#navdesc::after {
+    content: "";
+    margin: 0px 4px;
+}
+
+nav>ul {
+    display: inline-block;
+}

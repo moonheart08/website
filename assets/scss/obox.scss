@@ -1,0 +1,33 @@
+// This is GARBAGE but CSS has no way to handle depth like this.
+.obox {
+    padding: 6px;
+    margin: 4px;
+    border-radius: 4px;
+    color: var(--text-color-light);
+
+    background-color: var(--obox-bg);
+    border: 1px solid var(--obox-border);
+    box-shadow: var(--obox-border) 0px 2px;
+
+    --obox-bg: var(--color-secondary-5);
+    --obox-border: var(--color-secondary-4);
+}
+
+.obox .obox {
+    --obox-bg: var(--color-secondary-4);
+    --obox-border: var(--color-secondary-3);
+}
+
+.obox .obox .obox {
+    --obox-bg: var(--color-secondary-3);
+    --obox-border: var(--color-secondary-2);
+
+    color: var(--text-color-dark)
+}
+
+.obox .obox .obox .obox {
+    --obox-bg: var(--color-secondary-2);
+    --obox-border: var(--color-secondary-1);
+}
+
+// If for some reason I ever need more depth, the next step is to add even more nested descendants.

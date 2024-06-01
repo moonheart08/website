@@ -1,0 +1,33 @@
+baseURL = 'https://afterlight3149.net/'
+languageCode = 'en-us'
+title = "Kaylie's Blog(?)"
+ignoreFiles = ["\\.ts$", "tsconfig.json$"]
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+target = "static/fonts/fontawesome"
+
+[[module.mounts]]
+source = "node_modules/@fortawesome/fontawesome-free/scss"
+target = "assets/scss/fontawesome"
+
+[[module.mounts]]
+source = "node_modules/bootstrap/scss"
+target = "assets/scss/bootstrap"
+
+[[module.mounts]]
+source = "node_modules/petite-vue/dist"
+target = "static/js/vue/"
+includeFiles = "petite-vue.es.js"

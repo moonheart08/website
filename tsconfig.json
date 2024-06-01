@@ -1,0 +1,13 @@
+{
+    "include": [
+        "assets/ts/*.ts"
+    ],
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outDir": "static/js/",
+        "removeComments": true,
+        "alwaysStrict": true,
+        "newLine": "LF",
+        "target": "es6",
+    }
+}

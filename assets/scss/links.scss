@@ -1,0 +1,9 @@
+a:not(.buttonish) {
+    color: var(--color-primary-2);
+    text-shadow: var(--color-primary-5) 1px 1px;
+}
+
+a:not(.buttonish):hover {
+    color: var(--color-primary-1);
+    text-shadow: var(--color-primary-5) 1px 1px;
+}
