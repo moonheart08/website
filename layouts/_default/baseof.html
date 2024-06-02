@@ -6,16 +6,18 @@
 </head>
 
 <body>
-  <div class="obox">
-    <header class="obox">
+  <div class="winheadbox">
+    <header>
       {{ partial "header.html" . }}
     </header>
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer class="obox">
-      {{ partial "footer.html" . }}
-    </footer>
+    <div class="obox">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer class="obox">
+        {{ partial "footer.html" . }}
+      </footer>
+    </div>
   </div>
 </body>
 

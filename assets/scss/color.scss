@@ -26,3 +26,10 @@ body {
         --color-secondary-1: oklch(20% 0.010 84.59);
     }
 }
+
+@media (prefers-contrast: more) {
+    body {
+        --text-color-light: white;
+        --text-color-dark: black;
+    }
+}

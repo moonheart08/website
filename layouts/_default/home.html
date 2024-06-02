@@ -1,11 +1,15 @@
 {{ define "main" }}
 {{ .Content }}
-<div style="display: flex; flex-direction: column;">
-  <div class="obox">
-    {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-    {{ end }}
+<h2>Recent Posts</h2>
+<div style="display: flex; flex-direction: row;">
+  {{ range ( sort (where .Site.RegularPages "Section" "posts") "Date" "desc" ) }}
+  <div class="winheadbox" style="display: flex; flex-direction: column; align-items: flex-start;">
+    <a href="{{ .RelPermalink }}" class="buttonish">{{ .LinkTitle }}</a>
+    <div class="obox">
+      {{ .Summary }}
+    </div>
   </div>
+  {{ end }}
 </div>
+
 {{ end }}

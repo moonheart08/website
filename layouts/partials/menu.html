@@ -13,6 +13,9 @@ Renders a menu for the given menu ID.
 {{- with index site.Menus $menuID }}
 <nav class="conjoin-buttons">
   {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+  {{- if eq $menuID "main"}}
+  <a href="/" class="buttonish">Home</a>
+  {{- end}}
 </nav>
 {{- end }}
 

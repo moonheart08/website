@@ -3,6 +3,7 @@ menus = 'main'
 date = 2024-06-01T10:52:30-05:00
 title = 'About'
 summary = "A post about me, for introductory purposes."
+tags = ["personal"]
 +++
 
 ## Who are you?
@@ -23,5 +24,5 @@ Some *much* more dated, and less finished projects include my early-COVID effort
 Rust is an amazing productivity language, allowing me to move most of my mistakes closer to the compiler and as such catch them earlier (as compiler errors!), alongside a healthy sprinkling of modern functional programming principles, performance-oriented standard library design, and a now well established core ecosystem of common libraries that are used near *universally* (`serde` comes to mind!) among all projects.
 
 ### C#
+While I don't think C# is quite as good as Rust when it comes down to personal productivity, it's a *very* close second, and the language's approachability for newcomers makes it never-the-less a great pick for large projects, especially if many different people will ultimately be getting their hands dirty in the codebase. It also has an *extremely* expansive standard library, which helps a lot with bootstrapping new projects and generally just getting things done.
 
-### Assembly

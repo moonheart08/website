@@ -1,9 +1,45 @@
 a:not(.buttonish) {
-    color: var(--color-primary-2);
-    text-shadow: var(--color-primary-5) 1px 1px;
+    color: var(--color-primary-3);
+    //text-shadow: var(--color-primary-5) 1px 1px;
+}
+
+a:not(.buttonish):visited {
+    color: var(--color-primary-4);
 }
 
 a:not(.buttonish):hover {
-    color: var(--color-primary-1);
-    text-shadow: var(--color-primary-5) 1px 1px;
+    color: var(--color-primary-5);
+    //text-shadow: var(--color-primary-5) 1px 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+    a:not(.buttonish) {
+        color: var(--color-primary-2);
+        //text-shadow: var(--color-primary-5) 1px 1px;
+    }
+
+    a:not(.buttonish):visited {
+        color: var(--color-primary-3);
+    }
+
+    a:not(.buttonish):hover {
+        color: var(--color-primary-1);
+        //text-shadow: var(--color-primary-5) 1px 1px;
+    }
+}
+
+.obox .obox .obox {
+    a:not(.buttonish) {
+        color: var(--color-primary-2);
+        //text-shadow: var(--color-primary-5) 1px 1px;
+    }
+
+    a:not(.buttonish):visited {
+        color: var(--color-primary-3);
+    }
+
+    a:not(.buttonish):hover {
+        color: var(--color-primary-1);
+        //text-shadow: var(--color-primary-5) 1px 1px;
+    }
 }
