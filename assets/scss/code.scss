@@ -3,3 +3,9 @@ code {
     background-color: black;
     padding: 0px 4px;
 }
+
+@media (prefers-color-scheme: light) {
+    code {
+        color: var(--color-secondary-5);
+    }
+}
