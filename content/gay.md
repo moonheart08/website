@@ -15,13 +15,13 @@ body {
     --color-primary-5: oklch(34.77% 0.162 1.99);
 
     --color-secondary-5: oklch(80% 0.1 234);
-        --color-secondary-4: oklch(65% 0.1 234);
-        --color-secondary-3: oklch(50% 0.1 234);
-        --color-secondary-2: oklch(35% 0.1 234);
-        --color-secondary-1: oklch(20% 0.1 234);
+    --color-secondary-4: oklch(65% 0.1 234);
+    --color-secondary-3: oklch(50% 0.1 234);
+    --color-secondary-2: oklch(35% 0.1 234);
+    --color-secondary-1: oklch(20% 0.1 234);
 }
 
-p {
+p,h1,h2,h3,h4,time {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     background-size: 300px 100px;
     -webkit-background-clip: text;
