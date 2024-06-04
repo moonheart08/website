@@ -47,3 +47,11 @@ This entire site gets its coloration from a central palette specified on the bod
 As a bonus, this allows me to use a very simple trick to create the light theme: The order of colors in the secondary palette gets reversed for light mode usage.
 
 I'll be real, I have no idea if this is a standard approach or anything, I'm not actually a UI designer and I just picked up some ideas from throwing things at the wall.
+
+## Contrast modes.
+So, for some reason, while Firefox allows me to test light/dark very easily (this sight supports a light mode, based on OS preferences!) it doesn't have easy ways to test the other media options like `prefers-contrast`. The site *in theory* should switch to higher contrast text colors if the pref is set to `more`, but I can't easily test this as far as I know, which is a shame.
+
+## Built with Hugo
+This site is built on SCSS, Bootstrap, and Hugo, which has proven to be a pretty cozy combination. Hugo's templating engine isn't the greatest (hard to read and write) but it *does* work, and writing the content itself in markdown is pretty nice. Bootstrap is basically only used to clean-slate the browser's CSS choices so I have less browser variety to deal with. SCSS is used to build the stylesheets, though much of the fancy stuff (like the palette) uses plain old CSS vars and the like instead of anything SCSS provided.
+
+It's a nice combination and I have yet to touch javascript for this (this site has none) so I'm more than happy with it.
