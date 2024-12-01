@@ -53,4 +53,15 @@
     justify-content: space-between;
 }
 
+.winheadbox>header>h4 {
+    margin-right: 8px;
+}
+
+.winheadbox>.listentry {
+    width: 0;
+    padding-right: 10px;
+    min-width: calc(100% + 2px);
+    margin: -1px;
+}
+
 // If for some reason I ever need more depth, the next step is to add even more nested descendants.

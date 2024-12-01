@@ -3,9 +3,12 @@
 <h2>Recent Posts</h2>
 <div style="display: flex; flex-direction: row;">
   {{ range ( sort (where .Site.RegularPages "Section" "posts") "Date" "desc" ) }}
-  <div class="winheadbox" style="display: flex; flex-direction: column; align-items: flex-start;">
-    <a href="{{ .RelPermalink }}" class="buttonish">{{ .LinkTitle }}</a>
-    <div class="obox">
+  <div class="winheadbox small" style="display: inline-flex; flex-direction: column; align-items: flex-start;">
+    <header style="display: flex; flex-direction: row; align-items: flex-start; width: 100%; align-items:baseline;">
+      <h4>{{ .LinkTitle }}</h4>
+      <a href="{{ .RelPermalink }}" class="buttonish">Go ➤</a>
+    </header>
+    <div class="obox listentry">
       {{ .Summary }}
     </div>
   </div>

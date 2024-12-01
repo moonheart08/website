@@ -1,4 +1,4 @@
-body {
+:root {
     --color-primary-1: oklch(74.77% 0.162 68.99);
     --color-primary-2: oklch(64.77% 0.162 68.99);
     --color-primary-3: oklch(54.77% 0.162 68.99);
@@ -17,7 +17,7 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-    body {
+    :root {
         // Reverse the order of the 
         --color-secondary-5: oklch(80% 0.018 84.59);
         --color-secondary-4: oklch(65% 0.016 84.59);
@@ -28,7 +28,7 @@ body {
 }
 
 @media (prefers-contrast: more) {
-    body {
+    :root {
         --text-color-light: white;
         --text-color-dark: black;
     }

@@ -19,7 +19,20 @@ footer>p {
     margin-bottom: 4px;
 }
 
-
 html {
     height: 100%;
+}
+
+@media print {
+    footer {
+        display: none !important;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    main>h1:first-child {
+        display: none !important;
+    }
 }
