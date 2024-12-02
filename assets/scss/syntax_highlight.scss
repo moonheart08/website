@@ -8,6 +8,12 @@
 .chroma {
     color: #f8f8f2;
     background-color: #272822;
+    //padding: 6px;
+    //margin: 4px;
+    border-radius: 4px;
+    --chroma-mix: color-mix(in oklab, var(--obox-bg), black 20%);
+    border: 1px solid var(--chroma-mix);
+    box-shadow: var(--chroma-mix) 0px -3px;
 }
 
 /* Other */
@@ -73,6 +79,11 @@
 /* Line */
 .chroma .line {
     display: flex;
+    padding-left: 8px;
+}
+
+.line:nth-child(even) {
+    background: #01010120;
 }
 
 /* Keyword */

@@ -11,16 +11,19 @@
 
     --obox-bg: var(--color-secondary-5);
     --obox-border: var(--color-secondary-4);
+    --obox-bg-deeper: var(--color-secondary-4);
 }
 
 .obox .obox {
     --obox-bg: var(--color-secondary-4);
     --obox-border: var(--color-secondary-3);
+    --obox-bg-deeper: var(--color-secondary-3);
 }
 
 .obox .obox .obox {
     --obox-bg: var(--color-secondary-3);
     --obox-border: var(--color-secondary-2);
+    --obox-bg-deeper: var(--color-secondary-2);
 
     color: var(--text-color-dark)
 }
@@ -28,6 +31,7 @@
 .obox .obox .obox .obox {
     --obox-bg: var(--color-secondary-2);
     --obox-border: var(--color-secondary-1);
+    --obox-bg-deeper: var(--color-secondary-5);
 }
 
 .winheadbox>.obox {
