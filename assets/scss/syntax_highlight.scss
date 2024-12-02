@@ -8,12 +8,20 @@
 .chroma {
     color: #f8f8f2;
     background-color: #272822;
-    //padding: 6px;
     //margin: 4px;
     border-radius: 4px;
     --chroma-mix: color-mix(in oklab, var(--obox-bg), black 20%);
     border: 1px solid var(--chroma-mix);
     box-shadow: var(--chroma-mix) 0px -3px;
+
+    display: flex;
+}
+
+.chroma>code {
+    padding: 0px;
+    margin: 4px 0px 0px 0px;
+    border-bottom: 4px solid #01010120;
+    width: 100%;
 }
 
 /* Other */
@@ -82,7 +90,7 @@
     padding-left: 8px;
 }
 
-.line:nth-child(even) {
+.line:nth-child(odd) {
     background: #01010120;
 }
 
