@@ -3,9 +3,11 @@ languageCode = 'en-us'
 title = "Kaylie's Blog(?)"
 ignoreFiles = ["\\.ts$", "tsconfig.json$"]
 
-
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.highlight]
+noClasses = false
 
 [[module.mounts]]
 source = "assets"
