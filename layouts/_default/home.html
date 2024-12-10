@@ -1,10 +1,10 @@
 {{ define "main" }}
 {{ .Content }}
 <h2>Recent Posts</h2>
-<div style="display: flex; flex-direction: row; align-items:flex-start;">
+<div style="display: flex; flex-direction: row; align-items:flex-start; flex-wrap: wrap;">
   {{ range ( sort (where .Site.RegularPages "Section" "posts") "Date" "desc" ) }}
-  <div class="winheadbox small" style="display: inline-flex; flex-direction: column; align-items: flex-start;">
-    <header style="display: flex; flex-direction: row; align-items: flex-start; width: 100%; align-items:baseline;">
+  <div class="winheadbox small" style="display: inline-flex; flex-direction: column; align-items: flex-start; ">
+    <header style="display: flex; flex-direction: row; align-items: flex-start; width: 100%; align-items:baseline; ">
       <h4>{{ .LinkTitle }}</h4>
       <a href="{{ .RelPermalink }}" class="buttonish">Go ➤</a>
     </header>
