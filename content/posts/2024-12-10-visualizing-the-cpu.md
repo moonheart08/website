@@ -1,5 +1,5 @@
 +++
-date = 2024-12-09T15:14:13.846Z
+date = 2024-12-10T23:27:05.773Z
 title = "Visualizing the CPU"
 summary = "An ongoing project about creating a visual model of a modern speculative OoO processor."
 tags = ["visucpu", "programming"]
@@ -41,6 +41,86 @@ pub struct Machine {
 pub struct MachineState {
     /// The current global cycle, or "step", the machine is on.
     current_cycle: u64,
+}
+```
+
+## The Frontend (Decode v0)
+
+```rs
+use crate::machine::MachineState;
+
+/// Represents a handle for a register.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Hash)]
+pub enum Reg {
+    /// A register that is still "named", as one would encounter in the frontend.
+    Named(u8),
+    /// A real register, serving as an index into the register file.
+    Real(u8),
+}
+
+/// The size of an operation an instruction is performing. This typically controls
+/// the size of the registers used.
+/// AArch64 really only has two here, 32-bit and 64-bit. This is generally indicated
+/// by a flag on the instruction itself.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Hash)]
+pub enum OperationSize {
+    /// Indicates a 32-bit register size.
+    Word,
+    /// Indicates a 64-bit register size.
+    DoubleWord,
+}
+
+/// A "micro operation" produced by the decoder stage.
+/// Describes an instruction in a way that it can be executed.
+/// Actual processors do some very careful layout of this data to maximize ease of
+/// comprehension for execution units without making it require additional complex
+/// decode steps. This often includes things like permanently reserving parts of
+/// the uOp layout for certain fields. This was not done for this emulator, the goal
+/// is being accurate externally, not accurate internally.
+/// Additionally, specialty uOps that would exist for hardware efficiency reasons are not
+/// included here unless they make a good example.
+#[derive(Clone, PartialEq, Eq, Debug, Hash)]
+pub enum MicroOp {
+    /// Exactly C6.2.5 ADD (immediate)
+    AddImm {
+        s: OperationSize,
+        rd: Reg,
+        rn: Reg,
+        imm12: u16,
+    },
+}
+
+/// A dyn safe trait representing a decoder.
+/// This operates in a two step fashion: pull then push, with the pair of both effectively
+/// the clock of the decoder.
+/// For those wondering about performance:
+///     Yea, this is a reduction, there's indirection everywhere.
+/// But being super speedy isn't the goal, just quick to write and efficient enough.
+pub trait Decoder {
+    /// Pull procures data for the decoder to use, reading icache.
+    fn pull(&mut self, icache: &mut ());
+    /// Push then procures the decoded result, advancing decode and pushing out
+    /// as many uOps as possible.
+    fn push(&mut self, mstate: &MachineState, out: &mut [MicroOp]);
+}
+
+/// A decoder that simply returns one instruction over and over.
+pub struct DumbDecoder;
+
+impl Decoder for DumbDecoder {
+    fn pull(&mut self, _icache: &mut ()) {
+        // nothin.
+    }
+
+    fn push(&mut self, _mstate: &MachineState, out: &mut [MicroOp]) {
+        // Fill the entire decode output space with our dummy.
+        out.fill(MicroOp::AddImm {
+            s: OperationSize::DoubleWord,
+            rd: Reg::Named(1),
+            rn: Reg::Named(1),
+            imm12: 4,
+        });
+    }
 }
 ```
 
