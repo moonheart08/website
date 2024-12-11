@@ -17,6 +17,17 @@
     display: flex;
 }
 
+.cl>.sd {
+    font-size: 1rem;
+    display: inline-block;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+}
+
+.cl:has(.sd) {
+    width: 100%;
+}
+
 .chroma>code {
     padding: 0px;
     margin: 4px 0px 0px 0px;
@@ -245,7 +256,7 @@
 
 /* LiteralStringDoc */
 .chroma .sd {
-    color: #e6db74
+    color: oklch(80% 0.018 84.59)
 }
 
 /* LiteralStringDouble */
