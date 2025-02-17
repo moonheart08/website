@@ -1,6 +1,6 @@
 +++
 menus = 'main'
-date = 2024-12-01T10:52:30-05:00
+date = 2025-02-17T20:14:57Z
 title = 'Résumé'
 summary = "My Résumé. :)"
 tags = ["personal", "work"]
@@ -19,6 +19,7 @@ I directly contributed to Space Station 14 and it's associated game engine Robus
 - Pentesting and red-teaming for RobustToolbox to help ensure the security of users connecting to third-party servers.
 - Assisting with the R&D for a potential future move to Wasmtime as a sandboxing solution instead of the current home-grown solution.
 - Design and implementation of Toolshed, a command-line DSL and interpreter used to debug and modify the game at runtime, and serves as the primary implementation of console commands.
+- Much time and effort spent on-boarding new programmers, and improving the workflow for creating new projects with the game and engine.
 ## OpenDream (open source contributor)
 Opendream is another end user of RobustToolbox, which I both provide advising to and assist with the optimization of. Some highlights include:
 - Significant performance optimizations to the DreamMaker VM implementation alongside a coworker, improving the execution of the underlying bytecode loop by analyzing the JIT results and improving its output.
