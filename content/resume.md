@@ -28,7 +28,7 @@ Opendream is another end user of RobustToolbox, which I both provide advising to
 
 # Personal projects
 ## Hacksaw
-Hacksaw is a partial rewrite of RobustToolbox, targetting modern Vulkan graphics APIs for 3D and XR usecases. It is currently closed source but features rewrites of asset management, major portions of the ECS, and the renderer, as a joint project between [PJB](https://slugcat.systems/) and I.
+Hacksaw is a partial rewrite of RobustToolbox, targeting modern Vulkan graphics APIs for 3D and XR usecases. It is currently closed source but features rewrites of asset management, major portions of the ECS, and the renderer, as a joint project between [PJB](https://slugcat.systems/) and I.
 ## This Website
 This website is built on Hugo, with custom CSS, no javascript, and a lot of obsession over making it look good for multiple different views (print, light, dark, with or without high contrast).
 You may in fact be reading this from the PDF/print copy, visit https://afterlight3149.net/ for the site itself.
