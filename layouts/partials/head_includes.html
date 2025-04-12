@@ -2,11 +2,11 @@
 {{- if ne hugo.Environment "production" -}}
 {{ $sassOptions = merge $sassOptions (dict "enableSourceMap" true)}}
 {{- end -}}
-{{ $sass := resources.Get "scss/main.scss" | resources.ToCSS $sassOptions }}
+{{ $sass := resources.Get "scss/main.scss" | css.Sass $sassOptions }}
 
 {{- if eq hugo.Environment "production" -}}
 {{ $postCssOptions := (dict "config" "./postcss.config.js")}}
-{{ $sass = $sass | resources.PostCSS $postCssOptions | resources.Minify }}
+{{ $sass = $sass | css.PostCSS $postCssOptions | resources.Minify }}
 {{- end -}}
 
 <link rel="stylesheet" type="text/css" href="{{ $sass.RelPermalink }}" />
