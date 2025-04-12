@@ -10,6 +10,10 @@ Things that aren't well-written posts for you to read.
 - [Natural Resource Knowledge-base](https://trilium.afterlight3149.net/share/jZTHRHVYvc5S), a mere pile of information for myself that is publicly available.
 - [This website's repo](https://github.com/moonheart08/website), the underlying code on github.
 
+## Assorted libraries
+- [bevy-convars](github.com/transcendental-experiences/bevy-convars), An idiomatic convars implementation for Bevy. 
+- [bevy-renderdoc-capture](https://github.com/transcendental-experiences/bevy-renderdoc-capture), Simple module for adding a RenderDoc application capture hook to Bevy apps. 
+
 # Friends' websites
 
 - [slugcat.systems](https://slugcat.systems/), PJB's blog, a mix of interesting technical writeups and also lizor.
