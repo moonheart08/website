@@ -18,6 +18,13 @@ Things that aren't well-written posts for you to read.
 
 - [slugcat.systems](https://slugcat.systems/), PJB's blog, a mix of interesting technical writeups and also lizor.
 
+# Software Development
+## Rust
+- [Blessed.rs recommended crates directory](https://blessed.rs/crates), a compilation of "standard" crates for various tasks.
+- [The Embedonomicon](https://docs.rust-embedded.org/embedonomicon/preface.html), guidance for using Rust with embedded targets.
+## Computer Graphics
+- [An Efficient Way to Draw Approximate Circles](https://siegelord.net/circle_draw)
+
 # Historical
 - [Computer Simulation and History (SimH)](https://simh.trailing-edge.com/) An emulator for multiple historical computer architectures and assorted other documents.
   - [DEC Microprocessors by Bob Supnik](https://simh.trailing-edge.com/dsarchive.html), an archive of historical documentation related to multiple DEC processor lines.
