@@ -3,8 +3,12 @@ menus = 'main'
 date = 2024-06-01T10:52:30-05:00
 title = 'Linkbook'
 summary = "An organized collection of links around the internet."
-tags = ["linkbook"]
 +++
+
+# Other personal pages
+Things that aren't well-written posts for you to read.
+- [Natural Resource Knowledge-base](https://trilium.afterlight3149.net/share/jZTHRHVYvc5S), a mere pile of information for myself that is publicly available.
+- [This website's repo](https://github.com/moonheart08/website), the underlying code on github.
 
 # Friends' websites
 
