@@ -27,13 +27,13 @@ Opendream is another end user of RobustToolbox, which I both provide advising to
 - General advisory on compiler design and optimization approaches, including implementing some small "peephole" optimizations for the underlying bytecode.
 
 # Personal projects
-## Hacksaw
-Hacksaw is a partial rewrite of RobustToolbox, targeting modern Vulkan graphics APIs for 3D and XR usecases. It is currently closed source but features rewrites of asset management, major portions of the ECS, and the renderer, as a joint project between [PJB](https://slugcat.systems/) and I.
+## bevy-convars
+As part of a larger joint project between [PJB](https://slugcat.systems/) and myself, [bevy-convars](https://github.com/transcendental-experiences/bevy-convars) was written to fill a gap in the Bevy ecosystem around full-featured game configuration options. It's a fairly comprehensive, documented library for Bevy 0.16.
 ## This Website
 This website is built on Hugo, with custom CSS, no javascript, and a lot of obsession over making it look good for multiple different views (print, light, dark, with or without high contrast).
 You may in fact be reading this from the PDF/print copy, visit https://afterlight3149.net/ for the site itself.
 ## Afterlight 3149
-Afterlight 3149 was a mod/fork of Space Station 14 that completely reworked the game loop with my own take on the game's design, favoring many small 4-8 player spaceships instead of the single 80 player station and much longer game times (24-72hr) with an overall slower pace.
+Afterlight 3149 was a mod/fork of Space Station 14 that completely reworked the game loop with my own take on the game's design, favoring many small 4-8 player spaceships instead of the single 80 player station and much longer game times (24-72hr) with an overall slower pace. Working on it was a major learning experience for me and taught me a lot of proper software engineering practices that then went on to be used to build upstream systems like Toolshed and world generation.
 
 # Contact
 - Email: moony@hellomouse.net
