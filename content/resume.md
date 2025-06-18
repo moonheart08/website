@@ -10,6 +10,8 @@ tags = ["personal", "work"]
 Hello! I'm Kaylie, an experienced backend developer with history in game engine design, compiler and VM design, software optimization, operations security, and embedded development.
 I'm familiar with C#, Rust, C, C++, Lua, WebAssembly, Assembly (x86, AArch64), TypeScript, and several others with the ability to pick up new programming languages, tools, and environments in a week or two.
 
+I'm a US citizen seeking work in the EU, and currently staying in Belgium in the mid-term with a friend. The EU is proving absolutely lovely, and I've been learning dutch for a decent bit now (albeit slowly)!
+
 I have strong interests in finding better ways to architect software and improve development flow with better APIs and simpler workflows.
 
 # Notable Past Experience
