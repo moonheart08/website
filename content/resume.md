@@ -1,6 +1,6 @@
 +++
 menus = 'main'
-date = 2025-02-17T20:14:57Z
+date = 2025-06-18T20:14:57Z
 title = 'Résumé'
 summary = "My Résumé. :)"
 tags = ["personal", "work"]
