@@ -1,6 +1,6 @@
 +++
 menus = 'main'
-date = 2025-06-18T20:14:57Z
+date = 2025-06-17T20:14:57Z
 title = 'Résumé'
 summary = "My Résumé. :)"
 tags = ["personal", "work"]
@@ -11,8 +11,6 @@ Hello! I'm Kaylie, an experienced backend developer with history in game engine 
 I'm familiar with C#, Rust, C, C++, Lua, WebAssembly, Assembly (x86, AArch64), TypeScript, and several others with the ability to pick up new programming languages, tools, and environments in a week or two.
 
 I'm a US citizen seeking work in the EU, and currently staying in Belgium in the mid-term with a friend. The EU is proving absolutely lovely, and I've been learning dutch for a decent bit now (albeit slowly)!
-
-I have strong interests in finding better ways to architect software and improve development flow with better APIs and simpler workflows.
 
 # Notable Past Experience
 ## Space Station 14 (former Project Manager and Maintainer)
@@ -40,5 +38,4 @@ Afterlight 3149 was a mod/fork of Space Station 14 that completely reworked the 
 # Contact
 - Email: moony@hellomouse.net
 - Discord: @moonykay
-- Telegram: @devmoony
 - Signal: @kayliemoony.67
